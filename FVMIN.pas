@@ -32,7 +32,7 @@ begin
 
   GetExtent(R);
   R.A.X := R.B.X -9;
-  R.B.X := R.A.Y + 1;
+  R.B.Y := R.A.Y + 1;
   Clock := New(PClockView, Init(R));
   Insert(Clock);
 end;
@@ -48,7 +48,7 @@ procedure TFV.InitDesktop;
 var
   R: TRect;
 begin
-  GetExtent(r);
+  GetExtent(R);
   Inc(R.A.Y);
   Dec(R.B.Y);
   Desktop:= New(PDesktop, Init(R));
