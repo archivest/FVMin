@@ -7,7 +7,7 @@ A minimal Free Vision TUI program.
 
 ## Uses
 
-```
+```pascal
 uses
   Objects,
   Drivers,
@@ -24,14 +24,14 @@ uses
 
 ## Const
 
-```
+```pascal
 const
   cmAbout = 1001;
 ```
 
 ## Type
 
-```
+```pascal
 type
   PFV = ^TFV;
 
@@ -49,7 +49,7 @@ type
 
 ## Init
 
-```
+```pascal
 constructor TFV.Init;
 var
   R: TRect;
@@ -66,7 +66,7 @@ end;
 
 ## Idle
 
-```
+```pascal
 procedure TFV.Idle;
 begin
   inherited Idle;
@@ -77,7 +77,7 @@ end;
 
 ## InitDesktop
 
-```
+```pascal
 procedure TFV.InitDesktop;
 var
   R: TRect;
@@ -91,7 +91,7 @@ end;
 
 ## InitMenuBar
 
-```
+```pascal
 procedure TFV.InitMenuBar;
 var
   R: TRect;
@@ -109,7 +109,7 @@ end;
 
 ## InitStatusLine
 
-```
+```pascal
 procedure TFV.InitStatusLine;
 var
   R: TRect;
@@ -126,7 +126,7 @@ end;
 
 ## HandleEvent
 
-```
+```pascal
 procedure TFV.HandleEvent(var Event: TEvent);
 begin
   inherited HandleEvent(Event);
@@ -144,7 +144,7 @@ end;
 
 ## ShowAboutBox
 
-```
+```pascal
 procedure TFV.ShowAboutBox;
 begin
   MessageBox(#3'Minimal FV Demo'#13+
@@ -155,7 +155,7 @@ end;
 
 ## Main 
 
-```
+```pascal
 var
   FV: TFV;
 begin
